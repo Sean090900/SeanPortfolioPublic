@@ -6,7 +6,37 @@ Thanks for visiting my portfolio repository!
 
 Here you’ll find a collection of personal projects that highlight my approach to problem-solving, software design, and technical creativity. Each project reflects how I build real-world, practical solutions.
 
-## 1. Huffman Encoder | Mar 2025
+## 1. HPLC Uploader Tool | Nov 2025 - Feb 2026
+
+A Python-based automation tool for uploading and validating HPLC experimental data into internal data infrastructure. The tool parses instrument output files, performs validation and metadata checks, and programmatically registers experimental results through secure APIs, reducing manual data entry and improving traceability of analytical experiments.
+
+**How It Works:**
+  - Parses raw HPLC output files and extracts relevant data.
+  - Validates experiment structure, sample identifiers, and required metadata fields.
+  - Formats processed data into standardized payloads.
+  - Uploads experiment records and results through authenticated REST API endpoints.
+  - Logs upload status and validation errors to ensure reproducibility.
+
+**Core Skills:** 
+
+Python, Data Parsing, REST APIs, Data Validation, Automation, Scientific Data Pipelines, Error Handling
+
+## 2. CRISPR Guide Designer | Oct 2025 - Nov 2025
+
+A Python-based automation tool for designing CRISPR guide RNA constructs and corresponding plasmids for genomic engineering workflows. The system identifies optimal guide sequences for a target gene, assembles plasmid designs based on standardized cloning architectures, and programmatically registers the resulting constructs through APIs.
+
+**How It Works:**
+  - Accepts gene or genomic region input and scans for candidate CRISPR guide RNA sequences.
+  - Scores guides based on design constraints (e.g., PAM compatibility, sequence quality, and cloning requirements).
+  - Selects optimal guides and generates corresponding plasmid construct designs.
+  - Automatically assembles plasmid maps using standardized vector architectures.
+  - Registers designed guides and plasmids in the lab database through REST API calls.
+
+**Core Skills:** 
+
+Python, Bioinformatics, Algorithmic Sequence Design, CRISPR Guide Optimization, REST APIs, Automation, Laboratory Data Systems, Scientific Software Development
+
+## 3. Huffman Encoder | Mar 2025
 
 **Project Description:**
 
@@ -21,7 +51,7 @@ HuffmanEncoder is a Python-based implementation of the classic Huffman coding al
 
 Python, Algorithm Design, OOP, Recursion, Data Structures
 
-## 2. Multi-Sorter | Apr 2025
+## 4. Multi-Sorter | Apr 2025
 
 **Project Description:**
 
@@ -35,7 +65,7 @@ Multi-Sorter is a command-line utility that allows users to experiment with mult
 
 Python, CLI Applications, Complexity Analysis, Algorithm Optimization
 
-## 3. Beer Die Stat Recorder | Aug 2020
+## 5. Beer Die Stat Recorder | Aug 2020
 
 >“Because friendly competition deserves better than a whiteboard.”
 
