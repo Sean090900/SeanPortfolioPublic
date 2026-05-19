@@ -8,6 +8,8 @@
 
 I'm a software engineer with a focus on AI/ML, data pipelines, and scientific tooling. This repository showcases a selection of personal and professional projects that demonstrate how I approach real-world problems — from bioinformatics workflows to classical algorithms.
 
+**NOTE: Some projects are kept private due to proprietary or academic integrity constraints — code available upon request.**
+
 ---
 
 ## Projects
