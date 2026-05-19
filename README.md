@@ -1,92 +1,100 @@
-# Sean Dickson's Software Development Portfolio
+# Sean Dickson — Software Development Portfolio
 
-Welcome! 👋
+> Building practical, well-engineered solutions at the intersection of software and science.
 
-Thanks for visiting my portfolio repository!
+---
 
-Here you’ll find a collection of personal projects that highlight my approach to problem-solving, software design, and technical creativity. Each project reflects how I build real-world, practical solutions.
+## About
 
-## 1. HPLC Uploader Tool | Nov 2025 - Feb 2026
+I'm a software engineer with a focus on AI/ML, data pipelines, and scientific tooling. This repository showcases a selection of personal and professional projects that demonstrate how I approach real-world problems — from bioinformatics workflows to classical algorithms.
 
-A Python-based automation tool for uploading and validating HPLC experimental data into internal data infrastructure. The tool parses instrument output files, performs validation and metadata checks, and programmatically registers experimental results through secure APIs, reducing manual data entry and improving traceability of analytical experiments.
+---
 
-**How It Works:**
-  - Parses raw HPLC output files and extracts relevant data.
-  - Validates experiment structure, sample identifiers, and required metadata fields.
-  - Formats processed data into standardized payloads.
-  - Uploads experiment records and results through authenticated REST API endpoints.
-  - Logs upload status and validation errors to ensure reproducibility.
+## Projects
 
-**Core Skills:** 
+### [Assay Data Uploader](./assay-data-uploader) `Nov 2025 – Feb 2026`
 
-Python, Data Parsing, REST APIs, Data Validation, Automation, Scientific Data Pipelines, Error Handling
+**Automating analytical data registration for laboratory workflows**
 
-## 2. CRISPR Guide Designer | Oct 2025 - Nov 2025
+A Python automation tool that ingests raw instrument output, validates experimental metadata, and registers results into internal data infrastructure (Benchling) via authenticated REST APIs. Designed to reduce manual data entry and improve traceability across analytical experiments.
 
-A Python-based automation tool for designing CRISPR guide RNA constructs and corresponding plasmids for genomic engineering workflows. The system identifies optimal guide sequences for a target gene, assembles plasmid designs based on standardized cloning architectures, and programmatically registers the resulting constructs through APIs.
+| Area | Details |
+|---|---|
+| Input | Raw instrument output files |
+| Validation | Experiment structure, sample IDs, required metadata fields |
+| Output | Standardized payloads registered through REST API endpoints |
+| Observability | Per-upload logging with structured error reporting |
 
-**How It Works:**
-  - Accepts gene or genomic region input and scans for candidate CRISPR guide RNA sequences.
-  - Scores guides based on design constraints (e.g., PAM compatibility, sequence quality, and cloning requirements).
-  - Selects optimal guides and generates corresponding plasmid construct designs.
-  - Automatically assembles plasmid maps using standardized vector architectures.
-  - Registers designed guides and plasmids in the lab database through REST API calls.
+**Skills:** Python · ETL Pipelines · REST APIs · Data Validation · Scientific Data Pipelines · Error Handling
 
-**Core Skills:** 
+---
 
-Python, Bioinformatics, Algorithmic Sequence Design, CRISPR Guide Optimization, REST APIs, Automation, Laboratory Data Systems, Scientific Software Development
+### [CRISPR Guide Designer](./crispr-guide-designer) `Oct 2025 – Nov 2025`
 
-## 3. Huffman Encoder | Mar 2025
+**Computational tool for CRISPR guide RNA design and plasmid assembly**
 
-**Project Description:**
+A Python-based system that automates the design of CRISPR guide RNA constructs. Given a target gene or genomic region, the tool identifies candidate guide sequences, scores them against design criteria, assembles plasmid construct designs, and registers results in the lab database (Benchling).
 
-HuffmanEncoder is a Python-based implementation of the classic Huffman coding algorithm, used in data compression. It efficiently converts text or files into compact binary representations by assigning shorter codes to more frequent characters.
+| Stage | Description |
+|---|---|
+| Input | Gene name or genomic region |
+| Guide Selection | PAM compatibility, sequence quality, cloning compatibility scoring |
+| Construct Assembly | Automated plasmid map generation using standardized vector architectures |
+| Registration | REST API calls to register guides and plasmids in the lab database |
 
-**How It Works:**
-  - Encodes and decodes arbitrary strings or files into binary form.
-  - Demonstrates tree-based data structures, priority queues, and bitwise manipulation.
-  - Designed with modular Python classes for reusability and clarity.
+**Skills:** Python · Bioinformatics · CRISPR Guide Optimization · Automation
 
-**Core Skills:** 
+---
 
-Python, Algorithm Design, OOP, Recursion, Data Structures
+### [SecureBank](./securebank) `Nov 2025`
 
-## 4. Multi-Sorter | Apr 2025
+**ML-driven fraud detection system with class imbalance handling**
 
-**Project Description:**
+An end-to-end fraud detection pipeline built and deployed as a REST API. Applied SMOTE for synthetic minority oversampling and hard-negative mining to improve model recall on highly imbalanced transaction data. Deployed with health checks and structured logging.
 
-Multi-Sorter is a command-line utility that allows users to experiment with multiple sorting algorithms side-by-side. It was designed as a playground for understanding algorithmic complexity and runtime trade-offs in real-world data handling.
+**Skills:** Python · Machine Learning · SMOTE · Hard-Negative Mining · REST APIs · Model Deployment
 
-**How It Works:**
-  - Supports both built-in and custom sorting methods (e.g., insertion sort, merge sort).
-  - Outputs detailed runtime analysis for comparison between algorithms.
+---
 
-**Core Skills:** 
+### [Huffman Encoder](./huffman-encoder) `Mar 2025`
 
-Python, CLI Applications, Complexity Analysis, Algorithm Optimization
+**Lossless data compression via Huffman coding**
 
-## 5. Beer Die Stat Recorder | Aug 2020
+A modular Python implementation of the Huffman coding algorithm. Encodes and decodes arbitrary text or files into compact binary representations using frequency-based variable-length codes. Built around clean OOP design with clear separation between tree construction, encoding, and decoding.
 
->“Because friendly competition deserves better than a whiteboard.”
+- Builds a min-heap priority queue from character frequency analysis
+- Recursively constructs a Huffman tree and derives prefix-free binary codes
+- Encodes input to binary and decodes back to the original string without loss
 
-**Project Description:**
+**Skills:** Python · Algorithm Design · OOP · Recursion · Data Structures · Bitwise Manipulation
 
-Beer Die is a competitive game my friends and I used to play often. Tracking our wins, losses, and stats on a whiteboard just wasn’t cutting it — so I built a cloud-powered stats app that automates everything.
+---
 
-**How It Works:**
+### [Multi-Sorter](./multi-sorter) `Apr 2025`
 
-Uses Twilio SMS webhooks to trigger game data uploads from text messages.
-  - AWS Lambda functions handle message parsing and data processing.
-  - AWS DynamoDB provides persistent, cloud-hosted storage for user stats.
-  - Players can view, edit, and compare their records through text commands.
+**CLI playground for comparing sorting algorithm performance**
 
-**Note:**
+A command-line utility for running and benchmarking multiple sorting algorithms side-by-side on the same dataset. Built as a learning and analysis tool for understanding algorithmic complexity trade-offs in practice.
 
-This is an earlier project, included here to illustrate the progression of my software development skills over time. The system has been archived due to AWS/Twilio costs, but the full source code and workflow are preserved here for demonstration.
+- Supports insertion sort, merge sort, and additional configurable methods
+- Outputs per-algorithm runtime and comparison metrics
+- Designed to be extensible for adding new sorting strategies
 
-**Core Skills:**
-  - Python, AWS Lambda, DynamoDB, Twilio API
-  - Webhooks & Cloud Functions
-  - API Design, Data Persistence, Error Handling
-  - Deployment Automation
-  - Virtual Environments (environment.yml)
+**Skills:** Python · CLI Applications · Complexity Analysis · Algorithm Optimization
+
+---
+
+## Skills at a Glance
+
+| Domain | Technologies |
+|---|---|
+| Languages | Python |
+| Automation & Pipelines | REST APIs, Data Parsing, Scientific Data Pipelines |
+| Machine Learning | SMOTE, Hard-Negative Mining, Fraud Detection |
+| Bioinformatics | CRISPR Design, Sequence Analysis, Plasmid Assembly |
+| Algorithms & DS | Sorting, Huffman Coding, Trees, Priority Queues |
+| Engineering Practices | OOP, Error Handling, Logging, Modular Design |
+
+---
+
+*Last updated: May 2026*

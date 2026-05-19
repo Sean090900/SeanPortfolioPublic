@@ -1,4 +1,4 @@
-# HPLC Uploader Uploader
+# Assay Data Uploader
 
 **Created By:** Sean Dickson
 
