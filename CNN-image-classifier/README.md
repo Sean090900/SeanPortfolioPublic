@@ -1,4 +1,5 @@
-# Huffman Encoder
+# CNN Image Classifier
+
 **Created By:** Sean Dickson
 
 **IDE Used:** Visual Studio Code
