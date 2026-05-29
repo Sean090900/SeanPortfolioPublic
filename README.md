@@ -58,6 +58,16 @@ An end-to-end fraud detection pipeline built and deployed as a REST API. Applied
 
 ---
 
+### [CNN Image Classifier](./CNN-image-classifier) `Apr 2026`
+
+**Iterative improvment of a PyTorch-based CNN through regularization, drop-out, batch normaliztion, and early-stopping.**
+
+A school assignment dedicated to exploring convolutional neural networks. Built and optimized a CNN image classifier in PyTorch, achieving 82.9% test accuracy through a combination of dropout, L2 regularization, batch normalization, and early stopping.
+
+**Skills:** Python · Machine Learning · PyTorch · CNNs
+
+---
+
 ### [Huffman Encoder](./huffman-encoder) `Mar 2025`
 
 **Lossless data compression via Huffman coding**
