@@ -1,0 +1,7 @@
+securebank/data_sources/*
+securebank/storage/logs/*
+**/__pycache__/
+**/__init__.py
+*.csv
+*.pkl
+securebank-testing.ipynb
